@@ -2,13 +2,9 @@
 
 Efficient coin detection and counting from scanned images using deep learning and computer vision.
 
----
-
 ## Overview
 
 This project focuses on automated detection and counting of multiple coins from scanned or captured images using YOLOv8 and OpenCV. It replaces traditional manual counting methods with a fast, accurate, and scalable AI-based solution.
-
----
 
 ## Features
 
@@ -19,8 +15,6 @@ This project focuses on automated detection and counting of multiple coins from 
 * Handles overlapping coins and complex backgrounds
 * Works on both CPU and GPU
 
----
-
 ## Technologies Used
 
 * Python
@@ -28,15 +22,11 @@ This project focuses on automated detection and counting of multiple coins from 
 * YOLOv8 (object detection)
 * PyTorch (deep learning framework)
 
----
-
 ## Problem Statement
 
 Manual coin counting is time-consuming, error-prone, and inefficient for large volumes. Mechanical coin counting machines are expensive and not easily accessible.
 
 This project provides an automated, cost-effective solution using computer vision and deep learning.
-
----
 
 ## Methodology
 
@@ -53,8 +43,6 @@ Limitations:
 * Sensitive to lighting conditions
 * Requires manual parameter tuning
 
----
-
 ### Proposed Approach (YOLOv8)
 
 1. Input image
@@ -70,15 +58,11 @@ Advantages:
 * Handles overlapping coins
 * No manual feature engineering
 
----
-
 ## Model Architecture
 
 * Backbone: Feature extraction (CSPDarknet)
 * Neck: Feature fusion (FPN + PAN)
 * Head: Detection (class, bounding box, confidence)
-
----
 
 ## Results
 
@@ -88,8 +72,6 @@ Advantages:
 
 (Refer to performance graphs in the project report )
 
----
-
 ## Applications
 
 * Banking systems
@@ -98,8 +80,6 @@ Advantages:
 * Coin sorting systems
 * Financial applications
 * Accessibility tools
-
----
 
 ## Project Structure
 
@@ -143,8 +123,6 @@ yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=50
 yolo task=detect mode=predict model=best.pt source=images/
 ```
 
----
-
 ## Future Improvements
 
 * Mobile application integration
@@ -152,13 +130,9 @@ yolo task=detect mode=predict model=best.pt source=images/
 * Real-time video detection
 * Counterfeit coin detection
 
----
-
 ## Conclusion
 
 This project demonstrates how deep learning and computer vision can automate coin detection and counting efficiently. The use of YOLOv8 significantly improves accuracy, speed, and scalability compared to traditional approaches.
-
----
 
 ## Author
 
